@@ -1,0 +1,5 @@
+name: dart_language
+description: A new Command Line Dart App
+
+environment:
+  sdk: '>=2.10.0 <3.0.0'
