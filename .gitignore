@@ -1,0 +1,10 @@
+.dart_tool/
+.idea/
+.packages
+.pub-cache/
+.pub/
+*.js
+*.map
+*.exe
+*.dill
+*.js.deps
