@@ -6,4 +6,28 @@ class OperatorOverride {
   OperatorOverride.name(this.num);
 
   operator +(OperatorOverride operatorOverride) {}
+
+  operator -(OperatorOverride operatorOverride) {}
+
+  operator *(OperatorOverride operatorOverride) {}
+
+  operator /(OperatorOverride operatorOverride) {}
+
+  operator %(OperatorOverride operatorOverride) {}
+
+  operator ^(OperatorOverride operatorOverride) {}
+
+  operator |(OperatorOverride operatorOverride) {}
+
+  operator &(OperatorOverride operatorOverride) {}
+
+  operator <(OperatorOverride operatorOverride) {}
+
+  operator >(OperatorOverride operatorOverride) {}
+
+  operator <=(OperatorOverride operatorOverride) {}
+
+  operator >=(OperatorOverride operatorOverride) {}
+
+  operator [](OperatorOverride operatorOverride) {}
 }
