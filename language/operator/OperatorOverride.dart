@@ -43,14 +43,18 @@ class OperatorOverride {
 
   operator >=(OperatorOverride operatorOverride) {}
 
+  // TODO:// 书说可以覆写该方法,但是实际上并不可以
+  // operator  == (OperatorOverride operatorOverride){
+  // }
+
   // == 运算符为什么不能被覆写
   // bool operator == (OperatorOverride operatorOverride) {}
 
   // 左移
-  operator << (bits) {}
+  operator <<(bits) {}
 
   // 右移 的位数
-  operator >> (bits) {}
+  operator >>(bits) {}
 
   // 索引
   operator [](index) {}

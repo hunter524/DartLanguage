@@ -1,26 +1,34 @@
 library functions;
 import 'CallClass.dart';
 
+// 位置参数
 locationFunc(a, b, c) {
   print("locationFunc a: $a b: $b c: $c");
 }
 
+//可选参数
 locationVarFunc(a, b, [c = 1]) {
   print("locationVarFunc a: $a b: $b c: $c");
 }
 
+// 命名参数
 namedFunc({a, b, c}) {
   print("namedFunc a: $a b: $b c: $c");
 }
 
-dynamic funReturnFun(){
+// 报错! 一个方法不能同时拥有可选参数与命名参数
+// allTypeFunc(a,b,c,[d=1]),{e,f,g}){
+//
+// }
+
+dynamic funReturnFun() {
   return namedFunc;
 }
 
-main(){
-  locationFunc(1,2, 3);
+main() {
+  locationFunc(1, 2, 3);
   locationVarFunc(11, 22);
-  locationVarFunc(111, 222,333);
+  locationVarFunc(111, 222, 333);
 
   namedFunc(a: 1111,b: 2222);
   namedFunc(a: 11111,b: 22222,c: 33333);

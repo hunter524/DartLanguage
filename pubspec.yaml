@@ -4,4 +4,6 @@ description: A new Command Line Dart App
 environment:
   sdk: '>=2.10.0 <3.0.0'
 dependencies:
-  dio: 3.0.1
+  #  通过 >= <= 指定版本范围
+  dio: '<4.0.0'
+
