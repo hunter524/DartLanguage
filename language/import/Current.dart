@@ -11,7 +11,10 @@ main(){
 onValue(isSuccess){
   print("onValue");
   print(isSuccess);
-   // isSuccess?callDeferred():loadDeferredFail();
+  //TODO:为什么　isSuccess 是　null
+  //但是在 onValue 上调用延迟初始化的方法确实是可以被调用的
+  Deferred.doSomeThing();
+  // isSuccess?callDeferred():loadDeferredFail();
 }
 onError(error){
   print("onErr");

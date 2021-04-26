@@ -46,10 +46,17 @@ class OriginClass {
   prefix(String prefix) {
     return "$prefix $x $y";
   }
+
+  //TODO:// Dart #List 是什么语法?
+  get get => #List;
 }
 
-// TODO:// 基于反射的通用代理,因为类型转换报错
 main() {
-  // OriginClass proxy = Proxy(OriginClass(10, 2)) ;
-  // print("proxy sub: ${proxy.sub()}");
+  // 基于反射的通用代理,无法赋值为具体的类型
+  //　只能通过　dynamic 动态类型引用
+  dynamic proxy = Proxy(OriginClass(10, 2));
+  print("proxy sub: ${proxy.sub()}");
+
+  var origin = OriginClass(10, 2);
+  print("origin.get Type: ${origin.get.runtimeType} value: ${origin.get}");
 }
