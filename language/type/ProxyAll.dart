@@ -48,6 +48,8 @@ class OriginClass {
   }
 
   //TODO:// Dart #List 是什么语法?
+  // 返回的是 List 的一种 Symbol 表示方式
+  //TODO:// Dart 的 Symbol 是否参照了 JS 中的 Symbol
   get get => #List;
 }
 
